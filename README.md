@@ -4,17 +4,17 @@
 
 Sistem berbasis Streamlit yang digunakan untuk mengklasifikasikan sentimen dari judul berita daerah Buleleng ke dalam tiga kategori: **Positif**, **Netral**, dan **Negatif**. Sistem ini memanfaatkan model fine-tuned IndoBERT yang diunggah ke [Hugging Face Hub](https://huggingface.co/yeaylow/indobert-sentimen-berita) untuk klasifikasi senteimen berita.
 
-## 🔗 Demo 
+## Demo 
 
 [Link Sistem](https://klasifikasi-sentimen-berita-5cq7ezwcidd88zzzaciypv.streamlit.app/)
 
 ---
 
-## 🧠 Model
+## Model
 
 Model yang digunakan adalah versi fine-tuned dari IndoBERT untuk tugas klasifikasi sentimen multi-kelas. Model diunduh langsung dari Hugging Face:
 
-- 🔗 https://huggingface.co/yeaylow/indobert-sentimen-berita
+-  https://huggingface.co/yeaylow/indobert-sentimen-berita
 
 ---
 
@@ -35,8 +35,10 @@ Model yang digunakan adalah versi fine-tuned dari IndoBERT untuk tugas klasifika
    git clone https://github.com/username/klasifikasi-sentimen-berita.git
    cd klasifikasi-sentimen-berita
 2. **Install Dependensi ini:**
+   ```bash
    pip install -r requirements.txt
 3. **Jalankan:**
-   streamlit run app.py
+   ```bash
+    streamlit run app.py
 
 
