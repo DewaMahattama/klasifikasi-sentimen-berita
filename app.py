@@ -2,10 +2,16 @@ import streamlit as st
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 
+st.set_page_config(
+    page_title="Klasifikasi Sentimen",
+    layout="centered",
+    initial_sidebar_state="collapsed"
+)
+
 @st.cache_resource
 def load_model():
-    model = AutoModelForSequenceClassification.from_pretrained("indobert-beritak")
-    tokenizer = AutoTokenizer.from_pretrained("indobert-beritak")
+    model = AutoModelForSequenceClassification.from_pretrained("yeaylow/indobert-sentimen-berita")
+    tokenizer = AutoTokenizer.from_pretrained("yeaylow/indobert-sentimen-berita")
     return model, tokenizer
 
 model, tokenizer = load_model()
@@ -96,4 +102,4 @@ if st.button("Prediksi Sentimen"):
         </div>
         """, unsafe_allow_html=True)
 
-st.markdown('<div class="footer">Dewa</div>', unsafe_allow_html=True)
+st.markdown('<div class="footer">@DewaMahattama</div>', unsafe_allow_html=True)
