@@ -1,0 +1,10 @@
+model-indobert/
+*.safetensors
+*.pt
+*.bin
+data/
+*.csv
+*.xlsx
+__pycache__/
+*.log
+.env
