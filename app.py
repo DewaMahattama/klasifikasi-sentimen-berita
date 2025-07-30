@@ -30,12 +30,6 @@ def predict(text):
     pred = torch.argmax(probs, dim=1).item()
     return label_map[pred], probs[0][pred].item()
 
-st.set_page_config(
-    page_title="Klasifikasi Sentimen",
-    layout="centered",
-    initial_sidebar_state="collapsed"
-)
-
 st.markdown(
     """
     <style>
